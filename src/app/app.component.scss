@@ -1,9 +1,55 @@
-.logo > img {
-  position:absolute;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  margin:auto;
-  width: 255px;
+.logo {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  
+  img {
+    width: 100%;
+  }
 }
+
+.name {
+  height: 100%;
+  align-content: center;
+  justify-content: center;
+  display: grid;
+  color: whitesmoke;
+  font-size: 3rem;
+
+  span {
+    fill: whitesmoke;
+    filter: brightness(0.8); // Decrease brightness initially
+    transition: filter 0.3s ease; // Smooth transition for filter changes
+  }
+
+  &:hover {
+    span {
+      filter: brightness(2.2); // Increase brightness on hover
+    }
+  }
+}
+
+.social-media {
+  height: 100%;
+  align-content: center;
+  justify-content: center;
+  display: grid;
+}
+
+.grid-container {
+  height: 98vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 columns */
+  grid-template-rows: repeat(3, 1fr); /* Creates 3 rows */
+  gap: 10px; /* Optional: Adds space between grid items */
+}
+
+.copyright {
+  font-size: 0.8rem;
+  position: sticky;
+  bottom: 0;
+  text-align: center;
+  color: whitesmoke;
+}
+
