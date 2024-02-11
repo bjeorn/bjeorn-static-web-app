@@ -1,7 +1,22 @@
-html, body
+@font-face {
+    font-family: "Orbitron-Medium";
+    src: url("assets/fonts/orbitron-medium-webfont.woff");
+  }
+
+/* html, body
 {
     height: 100%;
     margin:0;
     padding:0;
-    background-color: whitesmoke;
+} */
+
+html, body { height: 100%; }
+body { 
+  margin: 0; 
+  font-family: Orbitron-Medium; 
+  background-color: rgb(26, 26, 26);
+
+  /* div {
+    border: 1px solid pink;
+  } */
 }

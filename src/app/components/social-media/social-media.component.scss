@@ -1,0 +1,31 @@
+.social-media-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  position: relative;
+
+  mat-icon {
+    transition: fill 0.3s ease; // Smooth transition for color change
+  }
+
+  a {
+    display: inline-block;
+    transition: transform 0.3s ease; // Smooth transition for hover effect
+
+    mat-icon {
+      fill: whitesmoke;
+      width: 32px;
+      height: 32px;
+      filter: brightness(0.8); // Decrease brightness initially
+      transition: filter 0.3s ease; // Smooth transition for filter changes
+    }
+
+    &:hover {
+      transform: scale(1.2); // Slightly increase size on hover
+
+      mat-icon {
+        filter: brightness(2.2); // Increase brightness on hover
+      }
+    }
+  }
+}
