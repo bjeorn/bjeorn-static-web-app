@@ -12,24 +12,24 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$angular-basic-primary: mat.define-palette(mat.$indigo-palette);
-$angular-basic-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+$bjeorn-app-primary: mat.define-palette(mat.$indigo-palette);
+$bjeorn-app-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
-$angular-basic-warn: mat.define-palette(mat.$red-palette);
+$bjeorn-app-warn: mat.define-palette(mat.$red-palette);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$angular-basic-theme: mat.define-light-theme((
+$bjeorn-app-theme: mat.define-light-theme((
   color: (
-    primary: $angular-basic-primary,
-    accent: $angular-basic-accent,
-    warn: $angular-basic-warn,
+    primary: $bjeorn-app-primary,
+    accent: $bjeorn-app-accent,
+    warn: $bjeorn-app-warn,
   )
 ));
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
-@include mat.all-component-themes($angular-basic-theme);
+@include mat.all-component-themes($bjeorn-app-theme);
 
