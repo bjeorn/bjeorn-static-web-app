@@ -5,9 +5,9 @@
       "context": "http://localhost:4200",
       "run": "npm start",
       "apiLocation": "",
-      "outputLocation": "dist/angular-basic",
+      "outputLocation": "dist/bjeorn-app",
       "devserverTimeout": 10000,
-      "open": "true"
+      "open": true
     }
   }
 }

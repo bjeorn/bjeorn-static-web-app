@@ -9,13 +9,14 @@
   }
 }
 
-.name {
+.company-name {
   height: 100%;
   align-content: center;
   justify-content: center;
   display: grid;
   color: whitesmoke;
   font-size: 3rem;
+  cursor: default;
 
   span {
     fill: whitesmoke;
