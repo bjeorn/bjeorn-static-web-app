@@ -1,12 +1,9 @@
-.logo {
+.grid-container {
+  height: 98vh;
   display: grid;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  
-  img {
-    min-width: 300px;
-  }
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 columns */
+  grid-template-rows: repeat(3, 1fr); /* Creates 3 rows */
+  gap: 10px; /* Optional: Adds space between grid items */
 }
 
 .company-name {
@@ -14,7 +11,6 @@
   align-content: center;
   justify-content: center;
   display: grid;
-  color: whitesmoke;
   font-size: 3rem;
   cursor: default;
 
@@ -31,26 +27,20 @@
   }
 }
 
+.logo {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  
+  img {
+    min-width: 300px;
+  }
+}
+
 .social-media {
   height: 100%;
   align-content: center;
   justify-content: center;
   display: grid;
 }
-
-.grid-container {
-  height: 98vh;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Creates 3 columns */
-  grid-template-rows: repeat(3, 1fr); /* Creates 3 rows */
-  gap: 10px; /* Optional: Adds space between grid items */
-}
-
-.copyright {
-  font-size: 0.8rem;
-  position: sticky;
-  bottom: 0;
-  text-align: center;
-  color: whitesmoke;
-}
-
