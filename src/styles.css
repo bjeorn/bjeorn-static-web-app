@@ -7,7 +7,7 @@ html, body { height: 100%; }
 body { 
   margin: 0; 
   font-family: Orbitron-Medium; 
-  background-color: rgb(26, 26, 26);
+  background-color: #001427;
   color: whitesmoke;
 
   /* div {
