@@ -1,40 +1,18 @@
 .grid-container {
-  height: 98vh;
+  height: 100vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Creates 3 columns */
-  grid-template-rows: repeat(3, 1fr); /* Creates 3 rows */
+  grid-template-rows: 1fr 2fr 1fr; /* Creates 3 rows */
   gap: 10px; /* Optional: Adds space between grid items */
-}
-
-.company-name {
-  height: 100%;
-  align-content: center;
-  justify-content: center;
-  display: grid;
-  font-size: 3rem;
-  cursor: default;
-
-  span {
-    fill: whitesmoke;
-    filter: brightness(0.8); // Decrease brightness initially
-    transition: filter 0.3s ease; // Smooth transition for filter changes
-  }
-
-  &:hover {
-    span {
-      filter: brightness(2.2); // Increase brightness on hover
-    }
-  }
 }
 
 .logo {
   display: grid;
   justify-content: center;
-  align-items: center;
   height: 100%;
   
   img {
-    min-width: 300px;
+    min-width: 400px;
   }
 }
 

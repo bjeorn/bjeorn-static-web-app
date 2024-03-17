@@ -1,6 +1,11 @@
 .copyright {
-    height: 2vh;
+    padding: 5px;
     font-size: 0.8rem;
     bottom: 0;
     text-align: center;
+    position: absolute;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    width: fill-available;
   }
+
