@@ -72,18 +72,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "bjeorn-app:build"
+            "buildTarget": "bjeorn-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "bjeorn-app:build:production"
+              "buildTarget": "bjeorn-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "bjeorn-app:build"
+            "buildTarget": "bjeorn-app:build"
           }
         },
         "test": {
