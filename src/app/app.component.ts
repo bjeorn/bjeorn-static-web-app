@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { SocialMediaComponent } from './components/social-media/social-media.component';
 import { IconService } from './util/service/icons/icon.service';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
@@ -9,7 +9,8 @@ import { FooterComponent } from './components/footer/footer.component';
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
     standalone: true,
-    imports: [HttpClientModule, SocialMediaComponent, FooterComponent]
+    imports: [
+SocialMediaComponent, FooterComponent]
 })
 export class AppComponent {
   constructor(private iconService: IconService, private http: HttpClient) {
