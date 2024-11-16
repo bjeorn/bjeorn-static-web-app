@@ -1,6 +1,7 @@
 @font-face {
     font-family: "Orbitron-Medium";
     src: url("assets/fonts/orbitron-medium-webfont.woff");
+    font-display: swap;
   }
 
 html, body { height: 100%; }
