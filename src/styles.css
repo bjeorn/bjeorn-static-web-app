@@ -1,13 +1,16 @@
 @font-face {
-    font-family: "Orbitron-Medium";
-    src: url("assets/fonts/orbitron-medium-webfont.woff");
-    font-display: swap;
-  }
+  font-family: "Orbitron-Medium";
+  src: url("assets/fonts/orbitron-medium-webfont.woff");
+  font-display: swap;
+}
 
-html, body { height: 100%; }
-body { 
-  margin: 0; 
-  font-family: Orbitron-Medium; 
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Orbitron-Medium, serif;
   background-color: #0E1625;
   color: whitesmoke;
 
