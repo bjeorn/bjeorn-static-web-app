@@ -1,4 +1,4 @@
-import { Injectable } from "@angular/core";
+import { Injectable, inject } from "@angular/core";
 import { MatIconRegistry } from "@angular/material/icon";
 import { DomSanitizer } from "@angular/platform-browser";
 import { Icons } from "./icons.enum";
@@ -7,14 +7,16 @@ import { Icons } from "./icons.enum";
   providedIn: 'root'
 })
 export class IconService {
-  constructor(private iconRegistry: MatIconRegistry, private sanitizer: DomSanitizer) {}
+  private iconRegistry = inject(MatIconRegistry);
+  private sanitizer = inject(DomSanitizer);
+
 
   registerIcons(): void {
     this.load(Icons, 'assets/icons');
   }
 
   private load(icons: typeof Icons, url: string): void {
-    Object.keys(icons).forEach(key => {
+    (Object.keys(icons) as (keyof typeof Icons)[]).forEach(key => {
       this.iconRegistry.addSvgIcon(key, this.sanitizer.bypassSecurityTrustResourceUrl(`${url}/${icons[key]}.svg`));
     });
   }
