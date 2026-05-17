@@ -9,11 +9,13 @@
 .logo {
   display: grid;
   justify-content: center;
+  align-content: center;
   height: 100%;
-  
+  margin: 0;
+
   img {
-    width: 400px;
-    height: 430px;
+    width: min(85vw, 400px);
+    height: auto;
   }
 }
 

@@ -1,13 +1,12 @@
 import { Component, inject } from '@angular/core';
 import { SocialMediaComponent } from './components/social-media/social-media.component';
 import { IconService } from './util/service/icons/icon.service';
-import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  imports: [SocialMediaComponent, FooterComponent]
+  imports: [SocialMediaComponent]
 })
 export class AppComponent {
   private iconService = inject(IconService);
