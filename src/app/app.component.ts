@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { SocialMediaComponent } from './components/social-media/social-media.component';
 import { IconService } from './util/service/icons/icon.service';
 import { FooterComponent } from './components/footer/footer.component';
@@ -7,6 +7,7 @@ import { FooterComponent } from './components/footer/footer.component';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [SocialMediaComponent, FooterComponent]
 })
 export class AppComponent {

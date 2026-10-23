@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
     selector: 'bjeorn-app-footer',
-    imports: [CommonModule],
+    imports: [],
     templateUrl: './footer.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush,
     styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
